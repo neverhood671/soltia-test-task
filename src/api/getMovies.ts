@@ -1,7 +1,7 @@
 import fetchJSON from '../utils/fetchJSON';
 
 const API_KEY = '906570ed';
-const API_URL = `http://www.omdbapi.com/?apikey=${API_KEY}`;
+const API_URL = `https://www.omdbapi.com/?apikey=${API_KEY}`;
 
 type MoviesResponse = {
   Response: 'True' | 'False',
