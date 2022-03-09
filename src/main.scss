@@ -16,13 +16,20 @@ body {
 }
 
 header {
-  margin: 40px auto;
+  margin-left: 20px;
+  @include md {
+    margin: 40px auto;
+  }
 }
 
 section {
-  border: 1px solid $dark-orange;
   padding: 20px;
   margin: 30px 0;
+  border-top: 1px solid $dark-orange;
+
+  @include md {
+    border: 1px solid $dark-orange;
+  }
 }
 
 h1 {
