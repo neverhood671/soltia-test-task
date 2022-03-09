@@ -1,0 +1,82 @@
+@import "src/assets/styles/colors";
+
+.history {
+  margin: 2.5rem 0 1rem;
+  &__header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    margin: 0;
+  }
+  &__list {
+    padding: 1rem 0;
+  }
+
+  &__clear-btn {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    text-decoration: underline;
+    font-size: 0.8rem;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:focus {
+      border: 1px solid $dark-orange;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid $gray;
+    font-size: 0.8rem;
+  }
+
+  &__item-aside {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  &__item-date-time {
+    color: $gray;
+  }
+
+  &__remove-item-btn {
+    cursor: pointer;
+    border: none;
+    background-color: $gray;
+    margin-left: 2rem;
+    width: 1rem;
+    height: 1rem;
+
+    -webkit-mask: url('../../../../../src/assets/icons/cross.svg') no-repeat 50% 50%;
+    mask: url('../../../../../src/assets/icons/cross.svg') no-repeat 50% 50%;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:focus {
+      border: 1px solid $dark-orange;
+    }
+  }
+
+
+  &__empty-history-msg {
+    color: $gray;
+    font-size: 0.8rem;
+  }
+}

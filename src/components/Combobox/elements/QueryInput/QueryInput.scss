@@ -1,0 +1,42 @@
+@import "src/assets/styles/colors";
+
+.query-input {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  border: 1px solid $gray;
+  padding: 0.5rem;
+
+  &__spinner {
+    margin-right: 1rem;
+  }
+
+  &__input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+
+  &__clear-btn {
+    cursor: pointer;
+    flex-shrink: 1;
+    background-color: $gray;
+    border: none;
+    -webkit-mask: url('../../../../../src/assets/icons/cross.svg') no-repeat 50% 50%;
+    mask: url('../../../../../src/assets/icons/cross.svg') no-repeat 50% 50%;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    height: 1rem;
+    width: 1rem;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:focus {
+      border: 1px solid $dark-orange;
+    }
+  }
+}
